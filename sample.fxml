@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="789.0" style="-fx-background-color: #757575;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="353.0" fitWidth="789.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <AnchorPane layoutX="452.0" prefHeight="353.0" prefWidth="272.0">
+            <children>
+            <ImageView fitHeight="350.0" fitWidth="300.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../alexandru-acea-1093133-unsplash.jpg" />
+               </image>
+            </ImageView>
+                <Label layoutX="9.0" layoutY="34.0" prefHeight="27.0" prefWidth="254.0" text="Security devices company">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <JFXPasswordField labelFloat="true" layoutX="26.0" layoutY="211.0" prefHeight="25.0" prefWidth="228.0" promptText="Password">
+                    <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXTextField labelFloat="true" layoutX="27.0" layoutY="170.0" prefHeight="25.0" prefWidth="228.0" promptText="Username">
+                    <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXToggleButton layoutX="99.0" layoutY="99.0" mnemonicParsing="false" text="Manger">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXToggleButton>
+                <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="258.0" mnemonicParsing="false" onAction="#log" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #FF4081;" text="Siginin" textFill="#4d4d4d">
+                    <font>
+                        <Font name="Bell MT Bold" size="17.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="63.0" layoutY="119.0" prefHeight="17.0" prefWidth="52.0" text="User">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="380.0" fitWidth="470.0" layoutX="56.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.666656494140625" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="326.0" AnchorPane.topAnchor="20.0">
+            <image>
+                <Image url="@../scott-webb-274694-unsplash.jpg" />
+            </image>
+        </ImageView>
+        <JFXButton layoutX="197.0" layoutY="279.0" mnemonicParsing="false" onAction="#shop" prefHeight="33.0" prefWidth="126.0" style="-fx-background-color: #FF4081;" text="Shop">
+            <font>
+                <Font name="Bell MT Bold" size="16.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

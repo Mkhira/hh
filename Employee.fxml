@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1366.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Employee">
+    <children>
+        <AnchorPane layoutX="5.0" layoutY="63.0" prefHeight="400.0" prefWidth="450.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+            <children>
+                <SplitPane dividerPositions="0.2378138847858198" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="659.0" style="-fx-background-color: #B2EBF2;" SplitPane.resizableWithParent="false">
+                            <children>
+                                <JFXTextField labelFloat="true" layoutX="166.0" layoutY="20.0" prefHeight="25.0" prefWidth="142.0" promptText="Employee_Name" style="-fx-background-color: #ffffff;" />
+                                <JFXTextField labelFloat="true" layoutX="14.0" layoutY="20.0" promptText="Employee_ID" style="-fx-background-color: #ffffff;" unFocusColor="BLACK" />
+                                <JFXTextField labelFloat="true" layoutX="166.0" layoutY="86.0" prefHeight="25.0" prefWidth="142.0" promptText="User_Name" style="-fx-background-color: #ffffff;" />
+                                <JFXTextField labelFloat="true" layoutX="14.0" layoutY="86.0" promptText="Employee_Adress" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0" />
+                                <JFXTextField labelFloat="true" layoutX="174.0" layoutY="147.0" prefHeight="25.0" prefWidth="135.0" promptText="Employee_phone" style="-fx-background-color: #ffffff;" />
+                                <JFXTextField labelFloat="true" layoutX="14.0" layoutY="147.0" promptText="Password" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="147.0" />
+                                <JFXButton buttonType="RAISED" layoutX="170.0" layoutY="300.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="135.0" ripplerFill="#449700" style="-fx-background-color: #448AFF;" text="UPdate" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font></JFXButton>
+                                <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="300.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" ripplerFill="#449700" style="-fx-background-color: #448AFF;" text="Dellet" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font></JFXButton>
+                                <JFXButton buttonType="RAISED" layoutX="85.0" layoutY="388.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" ripplerFill="#449700" style="-fx-background-color: #448AFF;" text="ADD" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font></JFXButton>
+                        <JFXTextField labelFloat="true" layoutX="10.0" layoutY="203.0" prefHeight="25.0" prefWidth="135.0" promptText="Job_id" style="-fx-background-color: #ffffff;" />
+                            </children></AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="317.0" style="-fx-background-color: #00BCD4;">
+                            <children>
+                                <JFXButton buttonType="RAISED" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" ripplerFill="#449700" style="-fx-background-color: #448AFF;" text="Search" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font></JFXButton>
+                                <TextField layoutX="84.0" layoutY="2.0" prefHeight="25.0" prefWidth="320.0" promptText="Search" />
+                                <TableView layoutX="14.0" layoutY="49.0" prefHeight="305.0" prefWidth="300.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="30.0">
+                                    <columns>
+                                        <TableColumn prefWidth="100.0" text="Employee_ID" />
+                                        <TableColumn prefWidth="112.0" text="Employee_Name" />
+                                        <TableColumn minWidth="8.0" prefWidth="9.0" text="Model" />
+                                        <TableColumn prefWidth="75.0" text="Username" />
+                                        <TableColumn prefWidth="110.0" text="Password" />
+                                        <TableColumn prefWidth="130.0" text="Employee_Adress" />
+                              <TableColumn prefWidth="114.0" text="Employee_phone" />
+                                    </columns>
+                                </TableView>
+                        <ScrollBar layoutX="1015.0" layoutY="38.0" orientation="VERTICAL" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="1015.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="30.0" />
+                            </children></AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

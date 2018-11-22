@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1366.0" style="-fx-background-color: #0097A7;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Exhibition">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="45.0" prefHeight="651.0" prefWidth="1366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <SplitPane dividerPositions="0.20833333333333334" layoutX="14.0" layoutY="20.0" prefHeight="636.0" prefWidth="1346.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="184.0" style="-fx-background-color: #00BCD4;">
+                     <children>
+                        <JFXHamburger prefHeight="98.0" prefWidth="191.0" />
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Accordion layoutX="48.0" layoutY="70.0" />
+
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="244.0" layoutY="24.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" ripplerFill="#0bd970" text="Search" textFill="WHITE" AnchorPane.leftAnchor="244.0" />
+      <TextField layoutX="348.0" layoutY="23.0" prefHeight="26.0" prefWidth="456.0" />
+      <JFXButton layoutX="1333.0" layoutY="11.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="19.0" text="X" />
+   </children>
+</AnchorPane>

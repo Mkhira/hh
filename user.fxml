@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="786.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.User">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" scaleZ="3.0" style="-fx-background-color: #0097A7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="container" layoutX="5.0" layoutY="76.0" prefHeight="319.0" prefWidth="745.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="76.0" />
+            <JFXButton layoutX="566.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="21.0" style="-fx-background-color: #4CAF50;" text="Button" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <JFXToolbar layoutX="8.0" layoutY="12.0" prefHeight="55.0" prefWidth="612.0" style="-fx-background-color: #B2EBF2;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="12.0">
+               <right>
+                  <JFXButton fx:id="in" buttonType="RAISED" mnemonicParsing="false" onAction="#inv" prefHeight="45.0" prefWidth="280.0" ripplerFill="#4caf50" style="-fx-background-color: #448AFF;" text="Inventory" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="22.0" />
+                     </font></JFXButton>
+               </right>
+               <center>
+                  <JFXButton fx:id="se" buttonType="RAISED" mnemonicParsing="false" onAction="#sell" prefHeight="45.0" prefWidth="280.0" ripplerFill="#4caf50" style="-fx-background-color: #448AFF;" text="Sell" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="22.0" />
+                     </font></JFXButton>
+               </center>
+               <left>
+                  <JFXButton fx:id="ex" buttonType="RAISED" mnemonicParsing="false" onAction="#exh" prefHeight="45.0" prefWidth="280.0" ripplerFill="#4caf50" style="-fx-background-color: #448AFF;" text="Exhibition" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets top="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="Bell MT Bold" size="22.0" />
+                     </font>
+                  </JFXButton>
+               </left>
+            </JFXToolbar>
+            <JFXButton fx:id="lo" buttonType="RAISED" layoutX="635.0" layoutY="14.0" mnemonicParsing="false" onAction="#log" prefHeight="25.0" prefWidth="72.0" ripplerFill="WHITE" style="-fx-background-color: #4CAF50;" text="Log out" textFill="WHITE" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="14.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
